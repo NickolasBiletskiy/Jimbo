@@ -1,0 +1,9 @@
+B:\JIMBO\dotnet\Data\bin\Debug\Data.dll.config
+B:\JIMBO\dotnet\Data\bin\Debug\Data.dll
+B:\JIMBO\dotnet\Data\bin\Debug\Data.pdb
+B:\JIMBO\dotnet\Data\bin\Debug\EntityFramework.dll
+B:\JIMBO\dotnet\Data\bin\Debug\EntityFramework.SqlServer.dll
+B:\JIMBO\dotnet\Data\bin\Debug\EntityFramework.xml
+B:\JIMBO\dotnet\Data\bin\Debug\EntityFramework.SqlServer.xml
+B:\JIMBO\dotnet\Data\obj\Debug\Data.dll
+B:\JIMBO\dotnet\Data\obj\Debug\Data.pdb
