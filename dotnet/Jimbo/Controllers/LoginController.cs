@@ -16,8 +16,19 @@ namespace Jimbo.Controllers
         {
             using (EntityContext db = new EntityContext())
             {
-                var user = db.Users.FirstOrDefault();
-                return db.Users.ToList();
+                User newUser = new User
+                {
+                    UserId = Guid.NewGuid(),
+                    FirstName = "Ololo",
+                    LastName = "hjosdf",
+                    Login = "sdfjoasg",
+                    Password = "sdofsdj"
+                };
+                db.User.Add(newUser);
+                db.SaveChanges();
+
+                var user = db.User.FirstOrDefault();
+                return db.User.ToList();
             }
         }
     }

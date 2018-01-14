@@ -1,5 +1,6 @@
 ﻿
 using System.Data.Entity;
+using System.Data.Entity.ModelConfiguration.Conventions;
 using Data.Entities;
 
 namespace Data.DbContext
@@ -8,14 +9,21 @@ namespace Data.DbContext
     {
         public EntityContext() : base("DefaultConnection")
         {
-            
+
+        }
+
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+
+            modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
         }
 
         #region DbSet
 
-        public DbSet<User> Users { get; set; }
-        public DbSet<Contact> Contacts { get; set; }
-        public DbSet<Message> Messages { get; set; }
+        public DbSet<User> User { get; set; }
+        public DbSet<Contact> Contact { get; set; }
+        public DbSet<Message> Message { get; set; }
 
         #endregion
     }
