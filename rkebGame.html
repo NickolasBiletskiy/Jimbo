@@ -1,3 +1,4 @@
+<link href="https://fonts.googleapis.com/css?family=Supermercado+One" rel="stylesheet">
 <script type="text/javascript">
 	function containerClicked(argument) {
 		//debugger;
@@ -6,13 +7,17 @@
 	}
 </script>
 <style type="text/css">
+	p {
+		font-family: 'Supermercado One';
+	}
+
 	body{
-		overflow-y: hidden;
+		background-image: url("webClient/image/ostrov.jpg");
+		overflow-x: hidden;
 		width: 101vw;
 	}
 	.container {
 		float: left;
-		background-color: bisque;
 		width: 33vw;
 		height: 100vh;
 		overflow-y: hidden;
@@ -26,79 +31,108 @@
 	}
 
 	.squareBlock {
-		transition: all 1s;
 		cursor: pointer;
 		user-select: none;
 		-moz-user-select: none;
-		border: 1px solid black;
 		float: left;
 		width: 8vw;
 		height: 8vw;
 		margin: 1vh 1vw;
 		text-align: center;
 		display: table;
+		border-radius: 5%;
+		transition: all 1s ease-out, transform 0.4s;
+
+	}
+	.squareBlock:hover{
+		transform: scale(1.1);
+	}
+	.greenBlock{
+		background: linear-gradient(to bottom, rgba(180,227,145,1) 0%,rgba(97,196,25,1) 50%,rgba(180,227,145,1) 100%);
+	}
+	.yellowBlock{
+		background: linear-gradient(to bottom, rgba(247,247,157,1) 0%,rgba(257,257,151,1) 25%, rgba(261,240,53,1) 50%,rgba(261,240,53,1) 75%,rgba(257,257,157,1) 100%);
+	}
+	.redBlock{
+		background: linear-gradient(to bottom, rgba(255,48,25,1) 10%,rgba(207,4,4,1) 50%,rgba(255,48,25,1) 100%)	
 	}
 
 	.squareBlock span {
 	    display: table-cell;
 	    vertical-align: middle;
 	    text-align: center;
+
 	}
+	    
 
 	.containerClicked{
-		background: gray;
+		/*background: gray;*/
+		visibility: hidden;
+		transition: 0.1s;
 	}
+	p {
+		position: absolute;
+		font-size: 55px;
+		width: 100%;
+		text-align: center;
+
+	}
+
 
 </style>
 <body>
+	<p>Інтелектуальна гра "Таємничий острів"</p>
+
 	<div class="container">
 		<div class="cell">
-			<div class="squareBlock greenBlock" onclick="containerClicked(event)"><span>1</span></div>
-			<div class="squareBlock greenBlock" onclick="containerClicked(event)"><span>1</span></div>
-			<div class="squareBlock greenBlock" onclick="containerClicked(event)"><span>1</span></div>
-			<div class="squareBlock greenBlock" onclick="containerClicked(event)"><span>1</span></div>
-			<div class="squareBlock greenBlock" onclick="containerClicked(event)"><span>1</span></div>
-			<div class="squareBlock greenBlock" onclick="containerClicked(event)"><span>1</span></div>
-			<div class="squareBlock greenBlock" onclick="containerClicked(event)"><span>1</span></div>
-			<div class="squareBlock greenBlock" onclick="containerClicked(event)"><span>1</span></div>
-			<div class="squareBlock greenBlock" onclick="containerClicked(event)"><span>1</span></div>
-			<div class="squareBlock greenBlock" onclick="containerClicked(event)"><span>1</span></div>
-			<div class="squareBlock greenBlock" onclick="containerClicked(event)"><span>1</span></div>
-			<div class="squareBlock greenBlock" onclick="containerClicked(event)"><span>1</span></div>
+				<div class="squareBlock greenBlock" onclick="containerClicked(event)"><span>1</span></div>
+				<div class="squareBlock greenBlock" onclick="containerClicked(event)"><span>2</span></div>
+				<div class="squareBlock greenBlock" onclick="containerClicked(event)"><span>3</span></div>
+				<div class="squareBlock greenBlock" onclick="containerClicked(event)"><span>4</span></div>
+				<div class="squareBlock greenBlock" onclick="containerClicked(event)"><span>5</span></div>
+				<div class="squareBlock greenBlock" onclick="containerClicked(event)"><span>6</span></div>
+				<div class="squareBlock greenBlock" onclick="containerClicked(event)"><span>7</span></div>
+				<div class="squareBlock greenBlock" onclick="containerClicked(event)"><span>8</span></div>
+				<div class="squareBlock greenBlock" onclick="containerClicked(event)"><span>9</span></div>
+				<div class="squareBlock greenBlock" onclick="containerClicked(event)"><span>10</span></div>
+				<div class="squareBlock greenBlock" onclick="containerClicked(event)"><span>11</span></div>
+				<div class="squareBlock greenBlock" onclick="containerClicked(event)"><span>12</span></div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="cell">
+
+			<div class="squareBlock yellowBlock" onclick="containerClicked(event)"><span>1</span></div>
+			<div class="squareBlock yellowBlock" onclick="containerClicked(event)"><span>2</span></div>
+			<div class="squareBlock yellowBlock" onclick="containerClicked(event)"><span>3</span></div>
+			<div class="squareBlock yellowBlock" onclick="containerClicked(event)"><span>4</span></div>
+			<div class="squareBlock yellowBlock" onclick="containerClicked(event)"><span>5</span></div>
+			<div class="squareBlock yellowBlock" onclick="containerClicked(event)"><span>6</span></div>
+			<div class="squareBlock yellowBlock" onclick="containerClicked(event)"><span>7</span></div>
+			<div class="squareBlock yellowBlock" onclick="containerClicked(event)"><span>8</span></div>
+			<div class="squareBlock yellowBlock" onclick="containerClicked(event)"><span>9</span></div>
+			<div class="squareBlock yellowBlock" onclick="containerClicked(event)"><span>10</span></div>
+			<div class="squareBlock yellowBlock" onclick="containerClicked(event)"><span>11</span></div>
+			<div class="squareBlock yellowBlock" onclick="containerClicked(event)"><span>12</span></div>
 		</div>
 	</div>
 
 	<div class="container">
 		<div class="cell">
-			<div class="squareBlock yellowBlock" onclick="containerClicked(event)"><span>2</span></div>
-			<div class="squareBlock yellowBlock" onclick="containerClicked(event)"><span>2</span></div>
-			<div class="squareBlock yellowBlock" onclick="containerClicked(event)"><span>2</span></div>
-			<div class="squareBlock yellowBlock" onclick="containerClicked(event)"><span>2</span></div>
-			<div class="squareBlock yellowBlock" onclick="containerClicked(event)"><span>2</span></div>
-			<div class="squareBlock yellowBlock" onclick="containerClicked(event)"><span>2</span></div>
-			<div class="squareBlock yellowBlock" onclick="containerClicked(event)"><span>2</span></div>
-			<div class="squareBlock yellowBlock" onclick="containerClicked(event)"><span>2</span></div>
-			<div class="squareBlock yellowBlock" onclick="containerClicked(event)"><span>2</span></div>
-			<div class="squareBlock yellowBlock" onclick="containerClicked(event)"><span>2</span></div>
-			<div class="squareBlock yellowBlock" onclick="containerClicked(event)"><span>2</span></div>
-			<div class="squareBlock yellowBlock" onclick="containerClicked(event)"><span>2</span></div>
-		</div>
-	</div>
+			<div class="squareBlock redBlock" onclick="containerClicked(event)"><span>1</span></div>
+			<div class="squareBlock redBlock" onclick="containerClicked(event)"><span>2</span></div>
+			<div class="squareBlock redBlock" onclick="containerClicked(event)"><span>3</span></div>
+			<div class="squareBlock redBlock" onclick="containerClicked(event)"><span>4</span></div>
+			<div class="squareBlock redBlock" onclick="containerClicked(event)"><span>5</span></div>
+			<div class="squareBlock redBlock" onclick="containerClicked(event)"><span>6</span></div>
+			<div class="squareBlock redBlock" onclick="containerClicked(event)"><span>7</span></div>
+			<div class="squareBlock redBlock" onclick="containerClicked(event)"><span>8</span></div>
+			<div class="squareBlock redBlock" onclick="containerClicked(event)"><span>9</span></div>
+			<div class="squareBlock redBlock" onclick="containerClicked(event)"><span>10</span></div>
+			<div class="squareBlock redBlock" onclick="containerClicked(event)"><span>11</span></div>
+			<div class="squareBlock redBlock" onclick="containerClicked(event)"><span>12</span></div>
 
-	<div class="container">
-		<div class="cell">
-			<div class="squareBlock redBlock" onclick="containerClicked(event)"><span>3</span></div>
-			<div class="squareBlock redBlock" onclick="containerClicked(event)"><span>3</span></div>
-			<div class="squareBlock redBlock" onclick="containerClicked(event)"><span>3</span></div>
-			<div class="squareBlock redBlock" onclick="containerClicked(event)"><span>3</span></div>
-			<div class="squareBlock redBlock" onclick="containerClicked(event)"><span>3</span></div>
-			<div class="squareBlock redBlock" onclick="containerClicked(event)"><span>3</span></div>
-			<div class="squareBlock redBlock" onclick="containerClicked(event)"><span>3</span></div>
-			<div class="squareBlock redBlock" onclick="containerClicked(event)"><span>3</span></div>
-			<div class="squareBlock redBlock" onclick="containerClicked(event)"><span>3</span></div>
-			<div class="squareBlock redBlock" onclick="containerClicked(event)"><span>3</span></div>
-			<div class="squareBlock redBlock" onclick="containerClicked(event)"><span>3</span></div>
-			<div class="squareBlock redBlock" onclick="containerClicked(event)"><span>3</span></div>
 		</div>
 	</div>
 </body>
+
