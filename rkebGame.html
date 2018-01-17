@@ -1,4 +1,10 @@
-<script type="text/javascript"></script>
+<script type="text/javascript">
+	function containerClicked(argument) {
+		//debugger;
+		if (argument.currentTarget.classList.contains("containerClicked")) {return false;}
+		argument.currentTarget.classList.add("containerClicked");
+	}
+</script>
 <style type="text/css">
 	body{
 		overflow-y: hidden;
@@ -20,62 +26,79 @@
 	}
 
 	.squareBlock {
+		transition: all 1s;
+		cursor: pointer;
+		user-select: none;
+		-moz-user-select: none;
 		border: 1px solid black;
 		float: left;
 		width: 8vw;
 		height: 8vw;
 		margin: 1vh 1vw;
+		text-align: center;
+		display: table;
 	}
+
+	.squareBlock span {
+	    display: table-cell;
+	    vertical-align: middle;
+	    text-align: center;
+	}
+
+	.containerClicked{
+		background: gray;
+	}
+
 </style>
 <body>
 	<div class="container">
 		<div class="cell">
-			<div class="squareBlock greenBlock">1</div>
-			<div class="squareBlock greenBlock">1</div>
-			<div class="squareBlock greenBlock">1</div>
-			<div class="squareBlock greenBlock">1</div>
-			<div class="squareBlock greenBlock">1</div>
-			<div class="squareBlock greenBlock">1</div>
-			<div class="squareBlock greenBlock">1</div>
-			<div class="squareBlock greenBlock">1</div>
-			<div class="squareBlock greenBlock">1</div>
-			<div class="squareBlock greenBlock">1</div>
-			<div class="squareBlock greenBlock">1</div>
-			<div class="squareBlock greenBlock">1</div>
+			<div class="squareBlock greenBlock" onclick="containerClicked(event)"><span>1</span></div>
+			<div class="squareBlock greenBlock" onclick="containerClicked(event)"><span>1</span></div>
+			<div class="squareBlock greenBlock" onclick="containerClicked(event)"><span>1</span></div>
+			<div class="squareBlock greenBlock" onclick="containerClicked(event)"><span>1</span></div>
+			<div class="squareBlock greenBlock" onclick="containerClicked(event)"><span>1</span></div>
+			<div class="squareBlock greenBlock" onclick="containerClicked(event)"><span>1</span></div>
+			<div class="squareBlock greenBlock" onclick="containerClicked(event)"><span>1</span></div>
+			<div class="squareBlock greenBlock" onclick="containerClicked(event)"><span>1</span></div>
+			<div class="squareBlock greenBlock" onclick="containerClicked(event)"><span>1</span></div>
+			<div class="squareBlock greenBlock" onclick="containerClicked(event)"><span>1</span></div>
+			<div class="squareBlock greenBlock" onclick="containerClicked(event)"><span>1</span></div>
+			<div class="squareBlock greenBlock" onclick="containerClicked(event)"><span>1</span></div>
 		</div>
 	</div>
 
 	<div class="container">
 		<div class="cell">
-			<div class="squareBlock yellowBlock">2</div>
-			<div class="squareBlock yellowBlock">2</div>
-			<div class="squareBlock yellowBlock">2</div>
-			<div class="squareBlock yellowBlock">2</div>
-			<div class="squareBlock yellowBlock">2</div>
-			<div class="squareBlock yellowBlock">2</div>
-			<div class="squareBlock yellowBlock">2</div>
-			<div class="squareBlock yellowBlock">2</div>
-			<div class="squareBlock yellowBlock">2</div>
-			<div class="squareBlock yellowBlock">2</div>
-			<div class="squareBlock yellowBlock">2</div>
-			<div class="squareBlock yellowBlock">2</div>
+			<div class="squareBlock yellowBlock" onclick="containerClicked(event)"><span>2</span></div>
+			<div class="squareBlock yellowBlock" onclick="containerClicked(event)"><span>2</span></div>
+			<div class="squareBlock yellowBlock" onclick="containerClicked(event)"><span>2</span></div>
+			<div class="squareBlock yellowBlock" onclick="containerClicked(event)"><span>2</span></div>
+			<div class="squareBlock yellowBlock" onclick="containerClicked(event)"><span>2</span></div>
+			<div class="squareBlock yellowBlock" onclick="containerClicked(event)"><span>2</span></div>
+			<div class="squareBlock yellowBlock" onclick="containerClicked(event)"><span>2</span></div>
+			<div class="squareBlock yellowBlock" onclick="containerClicked(event)"><span>2</span></div>
+			<div class="squareBlock yellowBlock" onclick="containerClicked(event)"><span>2</span></div>
+			<div class="squareBlock yellowBlock" onclick="containerClicked(event)"><span>2</span></div>
+			<div class="squareBlock yellowBlock" onclick="containerClicked(event)"><span>2</span></div>
+			<div class="squareBlock yellowBlock" onclick="containerClicked(event)"><span>2</span></div>
 		</div>
 	</div>
 
 	<div class="container">
 		<div class="cell">
-			<div class="squareBlock redBlock">3</div>
-			<div class="squareBlock redBlock">3</div>
-			<div class="squareBlock redBlock">3</div>
-			<div class="squareBlock redBlock">3</div>
-			<div class="squareBlock redBlock">3</div>
-			<div class="squareBlock redBlock">3</div>
-			<div class="squareBlock redBlock">3</div>
-			<div class="squareBlock redBlock">3</div>
-			<div class="squareBlock redBlock">3</div>
-			<div class="squareBlock redBlock">3</div>
-			<div class="squareBlock redBlock">3</div>
-			<div class="squareBlock redBlock">3</div>
+			<div class="squareBlock redBlock" onclick="containerClicked(event)"><span>3</span></div>
+			<div class="squareBlock redBlock" onclick="containerClicked(event)"><span>3</span></div>
+			<div class="squareBlock redBlock" onclick="containerClicked(event)"><span>3</span></div>
+			<div class="squareBlock redBlock" onclick="containerClicked(event)"><span>3</span></div>
+			<div class="squareBlock redBlock" onclick="containerClicked(event)"><span>3</span></div>
+			<div class="squareBlock redBlock" onclick="containerClicked(event)"><span>3</span></div>
+			<div class="squareBlock redBlock" onclick="containerClicked(event)"><span>3</span></div>
+			<div class="squareBlock redBlock" onclick="containerClicked(event)"><span>3</span></div>
+			<div class="squareBlock redBlock" onclick="containerClicked(event)"><span>3</span></div>
+			<div class="squareBlock redBlock" onclick="containerClicked(event)"><span>3</span></div>
+			<div class="squareBlock redBlock" onclick="containerClicked(event)"><span>3</span></div>
+			<div class="squareBlock redBlock" onclick="containerClicked(event)"><span>3</span></div>
 		</div>
 	</div>
 </body>
